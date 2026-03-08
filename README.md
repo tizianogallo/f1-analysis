@@ -27,8 +27,14 @@ f1-analysis/
 │   ├── 01_eda.ipynb        # EDA & data cleaning
 │   ├── 02_sql.ipynb        # SQL analysis via SQLite
 │   └── 03_ml.ipynb         # ML models & exports
-├── data/                   # Raw CSVs from Kaggle (not tracked)
-├── exports/                # Processed CSVs for Power BI (not tracked)
+├── data/                   # Raw CSVs from Kaggle
+├── exports/                # Processed CSVs for Power BI
+├── screenshots/            # Power BI dashboard screenshots
+│   ├── page1.png           # Driver & Nationality Explorer
+│   ├── page2.png           # Constructor Dynasty
+│   ├── page3.png           # Race & Lap Time Analysis
+│   └── page4.png           # Performance & Predictions
+├── f1_dashboard.pbix       # Power BI dashboard file
 ├── .gitignore
 └── README.md
 ```
@@ -115,7 +121,7 @@ pip install pandas numpy matplotlib seaborn scikit-learn jupyter ipykernel
 
 ### Getting the Data
 1. Download the dataset from [Kaggle](https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020)
-2. Unzip and place all CSVs in the `data/` folder
+2. Unzip and place all CSVs in the `data/` folder (already included in this repo)
 
 ### Running the Notebooks
 ```bash
@@ -141,6 +147,24 @@ Run notebooks in order:
 - **Ferrari** dominates all-time constructor wins, with Mercedes and Red Bull dominating the modern era
 - **Grid position is the strongest predictor** of race outcome — pole position has the highest win probability by far
 - The **points regression model** explains 67% of variance in race points, with the remaining 33% attributed to unpredictable factors like safety cars, weather and mechanical failures
+
+---
+
+## 📸 Dashboard Screenshots
+
+**Page 1 — Driver & Nationality Explorer**
+![Page 1](screenshots/page1.png)
+
+**Page 2 — Constructor Dynasty**
+![Page 2](screenshots/page2.png)
+
+**Page 3 — Race & Lap Time Analysis**
+![Page 3](screenshots/page3.png)
+
+**Page 4 — Performance & Predictions**
+![Page 4](screenshots/page4.png)
+
+> 📥 Download the full interactive dashboard: [f1_dashboard.pbix](f1_dashboard.pbix)
 
 ---
 
